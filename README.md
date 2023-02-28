@@ -7,3 +7,9 @@
 - Lists Id: `aws ec2 describe-vpcs --query "Vpcs[].VpcId"`
 
 ## Subnet
+
+## Route
+- `aws ec2 disassociate-route-table --association-id $RTB_ASSOC_PUBLIC_ID`
+
+## Security group
+- `aws ec2 revoke-security-group-ingress --group-id SG_ID --security-group-rule-ids SGR_ID`
