@@ -131,6 +131,8 @@ SGR_PUBLIC_HTTP=$(aws ec2 authorize-security-group-ingress \
     --output text)
 
 
+
+
 mkdir -p doc && cd ./doc
 echo "REGION:                   $REGION"                > ids.txt
 echo "VPC ID:                   $VPC_ID"                >> ids.txt

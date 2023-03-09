@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y
+amazon-linux-extras install -y docker
+systemctl start docker
+usermod -a -G docker ec2-user
+systemctl enable docker.service
+systemctl start docker.service
+docker run -dp 80:80 --name nginx nginx:alpine
